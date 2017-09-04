@@ -24,4 +24,10 @@ public class TestSomething {
         driver.navigate().to("https://wilbur04.github.io");
     }
 
+    @Test
+    public void myTestMethod(){
+        System.out.println("Hello World");
+    }
+
+
 }

@@ -33,8 +33,8 @@ public class Intermediate {
         String property = System.getProperty("user.dir");
         ReportDetails reportDetails = new ReportDetails(property + "\\TestReport",
                 "Basic Extent Report", "Basic Report");
-
         reportManager = new ExtentReportManager(ExtentReportManager.ReportType.HTML, reportDetails);
+
     }
 
  /*

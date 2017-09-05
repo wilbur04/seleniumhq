@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Sep 4, 2017 4:50:18 PM</span>
+				<span class='label suite-start-time'>Sep 5, 2017 1:28:40 PM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -63,8 +63,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -118,7 +117,7 @@
 					<span><span class='strong'>0</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -130,10 +129,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>0</span> step(s) passed</span>
+					<span><span class='strong'>4</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>1</span> step(s) failed, <span class='strong'>2</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>3</span> others
 				</div>
 			</div>
 		</div>
@@ -148,17 +147,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  warning' status='warning' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>testLogin</span>
-						<span class='test-time'>Sep 4, 2017 4:50:21 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>testInputData</span>
+						<span class='test-time'>Sep 5, 2017 1:28:40 PM</span>
+						<span class='test-status right warning'>warning</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 4, 2017 4:50:21 PM</span>
-	<span class='label end-time'>Sep 4, 2017 4:50:22 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+221ms</span>
+	<span class='label start-time'>Sep 5, 2017 1:28:40 PM</span>
+	<span class='label end-time'>Sep 5, 2017 1:29:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+470ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -172,40 +171,47 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>4:50:21 PM</td>
+					<td class='timestamp'>1:28:40 PM</td>
 					<td class='step-details'>This will try to connect to http://thedemosite.co.uk, add a new user and login as the user.</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>4:50:21 PM</td>
-					<td class='step-details'>Debug level message to display any information a TECHNICAL person might need to know</td>
+					<td class='timestamp'>1:28:40 PM</td>
+					<td class='step-details'>Debug level message to display any information a TECHNICAL person might need to know.</td>
 				</tr>
-				<tr class='log' status='error'>
-					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
-					<td class='timestamp'>4:50:22 PM</td>
-					<td class='step-details'>There could be a problem finding an element</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:28:44 PM</td>
+					<td class='step-details'>ayaza1Passed in chrome</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>4:50:22 PM</td>
-					<td class='step-details'>Couldn't Find Element: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/tablfe/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[3]/td[2]/p/input"}
-  (Session info: chrome=60.0.3112.113)
-  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'STUDENT04', ip: '192.168.1.147', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3240_30527}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=60.0.3112.113, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 77d21e1f9e2697de8ae34bda2b7e71c6
-*** Element info: {Using=xpath, value=/html/body/tablfe/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[3]/td[2]/p/input}</td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:28:52 PM</td>
+					<td class='step-details'>gghfPassed in firefox</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>1:28:53 PM</td>
+					<td class='step-details'>Exception while trying to close firefox</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:28:56 PM</td>
+					<td class='step-details'>blobPassed in chrome</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:29:04 PM</td>
+					<td class='step-details'>nerpPassed in firefox</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>1:29:04 PM</td>
+					<td class='step-details'>Exception while trying to close firefox</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\image.jpg' width='10%' src='' data-src='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\image.jpg'></li>
-							</ul>
 					</div>
 				</li>
 			</ul>
@@ -246,25 +252,25 @@ Session ID: 77d21e1f9e2697de8ae34bda2b7e71c6
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 4, 2017 4:50:18 PM</div>
+					<div class='panel-lead'>Sep 5, 2017 1:28:40 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 4, 2017 4:50:23 PM</div>
+			 		<div class='panel-lead'>Sep 5, 2017 1:29:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>4,632ms</div>
+					<div class='panel-lead'>24,594ms</div>
 				</div>
 			</div>
 		</div>
@@ -277,18 +283,18 @@ Session ID: 77d21e1f9e2697de8ae34bda2b7e71c6
 		<script>
 			var statusGroup = {
 				passParent: 0,
-				failParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
-				warningParent: 0,
+				warningParent: 1,
 				skipParent: 0,
 				exceptionsParent: 1,
 				
-				passChild: 0,
-				failChild: 1,
+				passChild: 4,
+				failChild: 0,
 				fatalChild: 0,
-				errorChild: 1,
-				warningChild: 0,
+				errorChild: 0,
+				warningChild: 2,
 				skipChild: 0,
 				infoChild: 1,
 				exceptionsChild: 3,

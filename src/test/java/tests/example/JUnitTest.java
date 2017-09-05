@@ -1,10 +1,13 @@
-
+package tests.example;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.ExtentReportManager;
+import utils.ReportDetails;
+import utils.ScreenShot;
 
 
 import java.io.IOException;

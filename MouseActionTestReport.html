@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Sep 6, 2017 2:21:40 PM</span>
+				<span class='label suite-start-time'>Sep 7, 2017 10:01:32 AM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -113,7 +113,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>1</span> test(s) passed</span>
+					<span><span class='strong'>4</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
@@ -128,10 +128,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>0</span> step(s) passed</span>
+					<span><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> step(s) failed, <span class='strong'>1</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -148,15 +148,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>testDroppable</span>
-						<span class='test-time'>Sep 6, 2017 2:21:46 PM</span>
+						<span class='test-name'>testSortable</span>
+						<span class='test-time'>Sep 7, 2017 10:01:37 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Sep 6, 2017 2:21:46 PM</span>
-	<span class='label end-time'>Sep 6, 2017 2:21:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+	<span class='label start-time'>Sep 7, 2017 10:01:37 AM</span>
+	<span class='label end-time'>Sep 7, 2017 10:01:38 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+521ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -170,17 +170,186 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>2:21:46 PM</td>
-					<td class='step-details'>Will try to drab one box and try to drop it on the other.</td>
+					<td class='timestamp'>10:01:37 AM</td>
+					<td class='step-details'>try rearranging the items in the list.</td>
 				</tr>
 				<tr class='log' status='debug'>
 					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-					<td class='timestamp'>2:21:46 PM</td>
-					<td class='step-details'>Check to see if it picking the right object and  moving it on the right object.</td>
+					<td class='timestamp'>10:01:37 AM</td>
+					<td class='step-details'>the items may not be draggable.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:38 AM</td>
+					<td class='step-details'>The first item is Item2</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:38 AM</td>
+					<td class='step-details'>The second item is Item1</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\sortableImage.jpg' width='10%' src='' data-src='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\sortableImage.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>testResizable</span>
+						<span class='test-time'>Sep 7, 2017 10:01:43 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 7, 2017 10:01:43 AM</span>
+	<span class='label end-time'>Sep 7, 2017 10:01:43 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+443ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>10:01:43 AM</td>
+					<td class='step-details'>Will try clicking on the box and changing its size.</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>10:01:43 AM</td>
+					<td class='step-details'>Check the location of the resize icon.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:43 AM</td>
+					<td class='step-details'>The box has been resized.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\resizableImage.jpg' width='10%' src='' data-src='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\resizableImage.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>testDroppable</span>
+						<span class='test-time'>Sep 7, 2017 10:01:49 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 7, 2017 10:01:49 AM</span>
+	<span class='label end-time'>Sep 7, 2017 10:01:49 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+372ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>10:01:49 AM</td>
+					<td class='step-details'>Will try to drab one box and try to drop it on the other.</td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>10:01:49 AM</td>
+					<td class='step-details'>Check to see if it picking the right object and  moving it on the right object.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:01:49 AM</td>
+					<td class='step-details'>Item has been dropped in box.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\droppableImage.jpg' width='10%' src='' data-src='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\droppableImage.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>testSelectable</span>
+						<span class='test-time'>Sep 7, 2017 10:02:01 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 7, 2017 10:02:01 AM</span>
+	<span class='label end-time'>Sep 7, 2017 10:02:02 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+607ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>10:02:01 AM</td>
+					<td class='step-details'></td>
+				</tr>
+				<tr class='log' status='debug'>
+					<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+					<td class='timestamp'>10:02:01 AM</td>
+					<td class='step-details'></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:02:02 AM</td>
+					<td class='step-details'>successfully selected the item 1.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:02:02 AM</td>
+					<td class='step-details'>successfully selected the item 2.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:02:02 AM</td>
+					<td class='step-details'>successfully not selected the item 3.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:02:02 AM</td>
+					<td class='step-details'>successfully not selected the item 4.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\selectableImage.jpg' width='10%' src='' data-src='C:\Users\Administrator\IdeaProjects\whateveryouwannacallit\img\selectableImage.jpg'></li>
+							</ul>
 					</div>
 				</li>
 			</ul>
@@ -215,31 +384,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 6, 2017 2:21:40 PM</div>
+					<div class='panel-lead'>Sep 7, 2017 10:01:32 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 6, 2017 2:22:17 PM</div>
+			 		<div class='panel-lead'>Sep 7, 2017 10:02:03 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>37,119ms</div>
+					<div class='panel-lead'>30,592ms</div>
 				</div>
 			</div>
 		</div>
@@ -251,7 +420,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
+				passParent: 4,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -259,14 +428,14 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 8,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 1,
-				exceptionsChild: 1,
+				infoChild: 4,
+				exceptionsChild: 4,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

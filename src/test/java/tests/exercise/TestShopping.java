@@ -11,11 +11,13 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-import pages.automationpractice.ContactUs;
-import pages.automationpractice.Index;
+import pages.automationPractice.ContactUs;
+import pages.automationPractice.Index;
+import pages.automationPractice.Product;
 import utils.ExtentReportManager;
 import utils.ReportDetails;
 import utils.ScreenShot;
@@ -27,11 +29,12 @@ import java.util.List;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.junit.Assert.assertEquals;
 
-public class TestShopping {WebDriver driver;
+public class TestShopping {
+    private WebDriver driver;
     private static ExtentReportManager reportManager;
-    Wait<WebDriver> wait;
+    private Wait<WebDriver> wait;
     static SpreadSheetReader sheetReader;
-    Index index;
+    private Index index;
 
     @BeforeClass
     public static void init() {
@@ -51,7 +54,7 @@ public class TestShopping {WebDriver driver;
                 .withTimeout(10, SECONDS)
                 .pollingEvery(1, SECONDS)
                 .ignoring(NoSuchElementException.class);
-        driver.navigate().to("http://automationpractice.com/index.php");
+        driver.navigate().to("http://automationPractice.com/index.php");
 
     }
 
@@ -81,7 +84,7 @@ public class TestShopping {WebDriver driver;
             List<String> list = sheetReader.readRow(rowNo, "contactus");
 
             try {
-                driver.navigate().to("http://automationpractice.com/index.php");
+                driver.navigate().to("http://automationPractice.com/index.php");
 
                 index.getContactUsLink().click();
                 wait.until(new Function<WebDriver, Boolean>() {
@@ -121,6 +124,7 @@ public class TestShopping {WebDriver driver;
     @Test
     public void testBasket() {
         ExtentTest extentTest = reportManager.setUpTest();
+        Product p = new Product(driver);
 
         extentTest.log(Status.INFO, "Testing if the user is able to contact us");
         extentTest.log(Status.DEBUG,
@@ -129,14 +133,23 @@ public class TestShopping {WebDriver driver;
 
 
         try {
-
             index.getItem2().click();
             wait.until(new Function<WebDriver, Boolean>() {
                 public Boolean apply(WebDriver driver) {
                     return (driver.getTitle().contains("My Store"));
                 }
             });
-
+            p.getQuantityInput().sendKeys("2");
+            p.getSizeInput().sendKeys("M");
+            p.getSizeInput().click();
+            p.getAddToCart().click();
+            wait.until(new Function<WebDriver, WebElement>() {
+                public WebElement apply(WebDriver driver) {
+                    return driver.findElement(By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[1]"));
+                }
+            });
+            p.getContinueShopping().click();
+            wait.until((ExpectedConditions.invisibilityOf(p.getPopup())));
             imagePath = ScreenShot.take(driver, "img\\addtoBasketImage");
             extentTest.addScreenCaptureFromPath(imagePath);
 
